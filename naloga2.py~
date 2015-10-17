@@ -1,0 +1,11 @@
+seznam=[1,2,3,4]
+
+def povecaj(seznam):
+	return [3*i 
+		for i in seznam
+		if i%2==0
+	]
+
+print(seznam)
+print(povecaj(seznam))
+print(seznam)

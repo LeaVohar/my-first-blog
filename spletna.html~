@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>NaSLOv</title>
+		<style>
+			h1{
+				color:blue;
+				font-size:5cm;
+				font-family:Arial;
+			}
+			a{
+				text-decoration:none;
+			}
+			div{
+			border: 1mm black solid;
+			text-align: center;
+			height: 3cm;				
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Soncnica</h1>
+		Napisala sem prvi stavek.
+		<br>
+		<a href=http://www.google.com>Google</a>
+		<div>Skatla presenecenja</div>
+		
+	</body>
+</html>

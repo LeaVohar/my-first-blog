@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <style> 
+        	*{
+        	/* to velja za vse, ampak je najmanj pomemben general*/
+        	font-family: Arial;
+        	}
+        	h1, h2{
+        	/*lahko da velja za oba*/
+        	}
+        	h1{
+        	font-family: 'Indie Flower', cursive;
+        	font-size:70px;
+        	margin:0
+        	list-style-type:upper-roman
+        	
+        	}
+        	h2{
+        	font-family: 'Lobster';
+        	font-size:30px;
+        	color:rgb(255,165,0);
+        	}
+        	a{
+        	text-decoration:None;
+        	color:rgb(200,200,200);
+        	}
+        	div{
+        	padding: 5mm 1mm 5mm 2mm;
+        	background: rgb(128,0,0);
+        	
+        	}
+        	body{
+        	/*background: rgb(220,240,250);*/
+        	background: url("https://www.google.si/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAcQjRxqFQoTCMidmvzhycgCFYJKFAodkp0Elg&url=http%3A%2F%2Fserbianforum.org%2Fthreads%2Fgif-slike-animacije.164762%2F&psig=AFQjCNHKF9GB6LmpXsGIVEmiUXpe5LnfSg&ust=1445180174022336")
+        	}
+        </style>
+    </head>
+    	
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+    	{% for post in posts %}
+    		<h2>{{ post.title }}</h2>
+    		{{ post.text | safe }}
+    		
+	{% endfor %}
+    	
+    </body>
+</html>
